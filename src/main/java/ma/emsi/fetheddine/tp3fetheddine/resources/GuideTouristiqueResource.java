@@ -27,7 +27,7 @@ public class GuideTouristiqueResource {
 
         try {
             // 2. APPELER L'INTERFACE DIRECTEMENT
-            String reponseJson = guide.genererInfosTouristiques(villeOuPays);
+            String reponseJson = guide.genererInfosTouristiques(villeOuPays, nombre);
             return Response.ok(reponseJson).build();
 
         } catch (Exception e) {
